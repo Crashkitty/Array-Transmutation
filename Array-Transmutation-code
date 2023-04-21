@@ -1,0 +1,11 @@
+// we are given an array and need to transform it into a new array with element as a product of of the original array
+// get the product of all elements in the array
+// map each element to the product divided by the current element
+
+function arrayTransmutation(arr) {
+  const product = arr.reduce((acc, curr) => acc * curr); /
+
+  const newArr = arr.map((num) => product / num); 
+
+  return newArr;
+}
